@@ -9,7 +9,8 @@
 body{
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
-    background: linear-gradient(to right, #c894b5, #f1ddfd);
+    background: linear-gradient(57deg, #ddb1f4, #adaff6);
+    box-shadow: 0 5px 10px rgba(62, 9, 11, .3);
 }
 .container{
   max-width: 600px;
