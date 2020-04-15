@@ -10,13 +10,13 @@ body{
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
     background: linear-gradient(57deg, #ddb1f4, #adaff6);
-    box-shadow: 0 5px 10px rgba(62, 9, 11, .3);
 }
 .container{
-  max-width: 600px;
-  background: #f8f8f8;
+    max-width: 600px;
+    background: #f8f8f8;
     padding: 2rem;
     border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(62, 9, 11, .3);
 }
 .btn{
   background: #a08cf3;
