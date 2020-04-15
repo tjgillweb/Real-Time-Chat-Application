@@ -54,3 +54,16 @@ input[type=text]{
     display: block;
     margin: 5px 0;
 }
+
+.username{
+    font-weight: 600;
+}
+.time{
+    font-size:0.7em;
+    color: #999;
+}
+.list-group-item{
+    background-color: #ececec;
+    border: none;
+    border-radius: 15px;
+}
