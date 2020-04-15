@@ -69,6 +69,31 @@
     </form>
   </div>
   
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZmSHSNyNEVCvMvCF2a0i0jT7JOLMvi8A",
+    authDomain: "realchat-235a5.firebaseapp.com",
+    databaseURL: "https://realchat-235a5.firebaseio.com",
+    projectId: "realchat-235a5",
+    storageBucket: "realchat-235a5.appspot.com",
+    messagingSenderId: "181785717346",
+    appId: "1:181785717346:web:7e1143e0524cb0c520ff3b",
+    measurementId: "G-6T3VY7SNST"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+</script>
   <script src="scripts/chat.js"></script>
   <script src="scripts/ui.js"></script>
   <script src="scripts/app.js"></script>
