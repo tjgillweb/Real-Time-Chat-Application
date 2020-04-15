@@ -3,6 +3,7 @@ class Chatroom{
         this.room = room;
         this.username = username;
         this.chats = db.collection('chats'); //store a reference to chats collection
+        this.unsub;
     }
     //add new chat documents
     async addChat(message){
@@ -21,7 +22,7 @@ class Chatroom{
 
     //setup a real time listener to get new chats
     getChats(callback){
-        this.chats
+        this.unsub = this.chats
         .where('room', '==', this.room)
         .orderBy('created_at')
         .onSnapshot(snapshot => {
@@ -33,10 +34,31 @@ class Chatroom{
             });
         });
     }
+    //update username
+    updateName(username){
+        this.username = username;
+    }
+
+    //update the chatroom
+    updateRoom(room){
+        this.room = room;
+        if(this.unsub){
+            this.unsub();
+        }
+        
+    }
 }
 
 const chatroom = new Chatroom('general', 'John');
 
 chatroom.getChats((data) => {
     console.log(data);
-})
+});
+setTimeout(() => {
+    chatroom.updateRoom('python');
+    chatroom.updateName('Dan');
+    chatroom.getChats((data) => {
+        console.log(data);
+    });
+    chatroom.addChat('hello');
+}, 3000);
