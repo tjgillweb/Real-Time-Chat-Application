@@ -49,16 +49,4 @@ class Chatroom{
     }
 }
 
-const chatroom = new Chatroom('general', 'John');
 
-chatroom.getChats((data) => {
-    console.log(data);
-});
-setTimeout(() => {
-    chatroom.updateRoom('python');
-    chatroom.updateName('Dan');
-    chatroom.getChats((data) => {
-        console.log(data);
-    });
-    chatroom.addChat('hello');
-}, 3000);
