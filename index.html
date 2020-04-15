@@ -8,6 +8,66 @@
   <title>Real Time Chat Application</title>
 </head>
 <body>
+
+  <!-- container & title -->
+  <div class="container my-4">
+    <h2 class="text-center">Real Chat</h1>
+
+    <!-- buttons for chatrooms -->
+    <div class="chat-rooms mb-3 text-center">
+      <div class="my-3">Select a chatroom:</div>
+        <a id="general" class="chat-room mx-3">
+            <div class="single-room">
+                <img src="images/general.svg">
+                <span>General</span>
+            </div>
+        </a>
+        <a id="react" class="chat-room mx-3">
+            <div class="single-room">
+                <img src="images/react.svg">
+                <span>React</span>
+            </div>
+        </a>
+        <a id="node" class="chat-room mx-3">
+            <div class="single-room">
+                <img src="images/nodejs.svg">
+                <span>Node JS</span>
+            </div>
+        </a>
+        <a id="python" class="chat-room mx-3">
+            <div class="single-room">
+                <img src="images/python.svg">
+                <span>Python</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- chat list / window -->
+    <div class="chat-window">
+      <ul class="chat-list list-group"></ul>
+    </div>
+
+    <!-- new chat form -->
+    <form class="new-chat my-3">
+      <div class="input-group">
+        <input type="text" id="message" class="form-control text-input" placeholder="Enter your message" required>
+        <div class="input-group-append">
+          <input type="submit" class="btn" value="send">
+        </div>
+      </div>
+    </form>
+
+    <!-- update name form -->
+    <form class="new-name my-3">
+      <div class="input-group">
+        <input type="text" id="name" class="form-control text-input" placeholder="Update your name" required>
+        <div class="input-group-append">
+          <input type="submit" class="btn" value="update">
+        </div>
+      </div>
+      <div class="update-mssg"></div>
+    </form>
+  </div>
   
   <script src="scripts/chat.js"></script>
   <script src="scripts/ui.js"></script>

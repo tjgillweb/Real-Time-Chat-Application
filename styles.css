@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+body{
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background: linear-gradient(to right, #c894b5, #f1ddfd);
+}
+.container{
+  max-width: 600px;
+  background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.btn{
+  background: #a08cf3;
+  color: white;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+  padding: 0 13px;
+  border-radius: 0.25rem !important;
+  text-transform: capitalize;
+}
+.btn:focus, input:focus, input:active{
+  outline: none !important;
+  border: none;
+}
+.btn:hover{
+    color: #fff;
+}
+input[type=text]{
+    border: none;
+    background: #eee;
+    border-radius: 5px;
+    margin-right: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.chat-room{
+    display: inline-block;
+    cursor: pointer;
+}
+.chat-room .single-room img{
+    width: 50px;
+}
+.chat-room .single-room span{
+    display: block;
+    margin: 5px 0;
+}
