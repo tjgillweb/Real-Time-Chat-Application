@@ -111,6 +111,10 @@ input[type=text]:focus, input[type=text]:active{
 .list-group-item span{
     font-family: 'PT Sans Narrow', sans-serif;
 }
+.list-group-item .time{
+    float: right;
+    font-family: 'Oswald', sans-serif;
+}
 .list-group-item img{
     width: 25px;
 }
