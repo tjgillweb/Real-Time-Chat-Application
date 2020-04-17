@@ -2,6 +2,9 @@ class ChatUI{
     constructor(list){
         this.list = list;
     }
+    clear(){
+        this.list.innerHTML = '';
+    }
     //render chat templates to the DOM
     render(data){
         const when = dateFns.distanceInWordsToNow(
