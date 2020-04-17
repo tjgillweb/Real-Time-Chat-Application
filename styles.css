@@ -1,15 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+@font-face {
+	font-family: 'Conv_DIMIS___';
+	src: url('fonts/DIMIS___.eot');
+	src: local('☺'), url('fonts/DIMIS___.woff') format('woff'), url('fonts/DIMIS___.ttf') format('truetype'), url('fonts/DIMIS___.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+h2{
     font-weight: 600;
+    font-family: 'Conv_DIMIS___',Sans-Serif;
+    display:inline-block;
+    color: rgb(100, 65, 165);
+    font-size: 3rem;
 }
+
 body{
     margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
     background: linear-gradient(57deg, #ddb1f4, #adaff6);
+    color: #494d51;
+}
+h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
 }
 .container{
     max-width: 600px;
@@ -18,8 +41,14 @@ body{
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(62, 9, 11, .3);
 }
+i{
+    font-size: 3rem;
+    color: rgb(100, 65, 165);
+    vertical-align: sub;
+}
 .btn{
-  background: #a08cf3;
+  /* background: #a08cf3; */
+  background: rgb(100, 65, 165);
   color: white;
   outline: none !important;
   box-shadow: none !important;
@@ -27,20 +56,28 @@ body{
   padding: 0 13px;
   border-radius: 0.25rem !important;
   text-transform: capitalize;
+  font-family: 'Bebas Neue', sans-serif;
 }
-.btn:focus, input:focus, input:active{
-  outline: none !important;
-  border: none;
-}
+.btn:focus{
+    outline: none !important;
+} 
 .btn:hover{
     color: #fff;
 }
+
 input[type=text]{
     border: none;
     background: #eee;
     border-radius: 5px;
     margin-right: 1rem;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    box-shadow: rgb(100, 65, 165) 2px 2px 0px 0px;
+    border: 2px solid rgb(100, 65, 165);
+}
+input[type=text]:focus, input[type=text]:active{
+    outline: none !important;
+    box-shadow: rgb(100, 65, 165) 4px 4px 0px 0px !important; 
+    border: 2px solid rgb(100, 65, 165) !important;
 }
 
 .chat-room{
@@ -68,8 +105,16 @@ input[type=text]{
 .list-group-item{
     background-color: #ececec;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px !important;
+    margin: 3px 0;
+}
+.list-group-item span{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.list-group-item img{
+    width: 25px;
 }
 .update-mssg{
     height: 30px;
+    font-size:0.8rem;
 }

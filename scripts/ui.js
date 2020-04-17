@@ -13,6 +13,7 @@ class ChatUI{
         );
         const html=`
             <li class="list-group-item">
+                <img src="images/man.svg">
                 <span class="username">${data.username}</span>
                 <span class="message">${data.message}</span>
                 <div class="time">${when} </div>
